@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+    stages {
+        stage ('Git scm'){
+            steps{
+                echo " Executed scm ..!"
+            }
+        }
+    }
+   
+}
