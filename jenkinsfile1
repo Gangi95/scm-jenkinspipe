@@ -6,7 +6,7 @@ pipeline{
                 echo " Executed scm ..!"
             }
         }
-        stage('fortiy){
+        stage('fortiy'){
           steps{
             echo "executed second scm ..."
 }
