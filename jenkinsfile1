@@ -1,16 +1,28 @@
+
 pipeline{
     agent any
     stages {
-        stage ('Git scm'){
+        stage ('Build'){
             steps{
-                echo " Executed scm ..!"
+                echo " build pipeline..!"
             }
         }
-        stage('fortiy'){
-          steps{
-            echo "executed second scm ..."
-}
-         }
+        stage('scan'){
+            steps{
+                echo "scan pipeline"
+            }
+        }
+        stage('Build docker'){
+            steps{
+                echo "build docker pipeline"
+            }
+
+        }
+        stage('devploye'){
+            steps{
+                echo "dev pipeline"
+            }
+        }
     }
    
 }
